@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/reviewFormstyle.css">
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <script src="js/script.js" defer></script>
+    <title>Review Site</title>
+</head>
+<body>
+    <div class="img-container">
+            <nav class="navbar main-container">
+                <div class="brand-title">Brand Name</div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="addNewRestaurant.html" class="btn"><i class="fas fa-plus-circle"></i>      Add Restaurant Review</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="search main-container">
+                <div class="herotext">
+                    <h2>Add Restaurant Review</h2>
+                    <h1>Add a Review of Your Favourite Restaurant Here!</h1>
+                </div>
+            </div>
+    </div>
+    <div id="testbox">
+        <form action="/">
+        
+          <h4>Name</h4>
+          <div class="name">
+            <input type="text" name="name" placeholder="First" />
+            <input type="text" name="name" placeholder="Last" />
+          </div>
+          <h4>Email</h4>
+          <input type="email" name="Email" />
+          <h4>Restaurant Name</h4>
+            <input type="text" name="restaurant_name" placeholder="Name of the Restaurant" />
+          <h4>Location You Visited<span>*</span></h4>
+          <input type="text" name="restaurant_location" placeholder="Restaurant Town/City" />
+          <h4>Day Visited<span>*</span></h4>
+          <div class="day-visited">
+            <input type="date" name="dayvisited" required/>
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <h4>Time Visited<span>*</span></h4>
+      <div class="time-visited">
+            <input type="time" name="timevisited" required/>
+            <i class="fas fa-clock"></i>
+          </div>
+          <h4>Dine In / Take Out</h4>
+          <div class="question-answer">
+            <label><input type="radio" value="none" name="Dine" /> Dine In</label>
+            <label><input type="radio" value="none" name="Dine" /> Take Out</label>
+          </div>
+          <h4>Age<span>*</span></h4>
+          <select>
+            <option class="disabled" value="location" disabled selected>*Please Select*</option>
+            <option value="under 13">Under 13</option>
+            <option value="13-17">13-17</option>
+            <option value="18-24">18-24</option>
+            <option value="25-34">25-34</option>
+            <option value="35-44">35-44</option>
+            <option value="45-54">45-54</option>
+            <option value="55 or older">55 or older</option>
+          </select>
+          <h4>Untitled</h4>
+          <table>
+            <tr>
+              <th class="first-col"></th>
+              <th>Amazing</th>
+              <th>Good</th>
+              <th>Decent</th>
+              <th>Disappointing</th>
+            </tr>
+            <tr>
+              <td class="first-col">Food Quality</td>
+              <td><input type="radio" value="none" name="Food" /></td>
+              <td><input type="radio" value="none" name="Food" /></td>
+              <td><input type="radio" value="none" name="Food" /></td>
+              <td><input type="radio" value="none" name="Food" /></td>
+            </tr>
+            <tr>
+              <td class="first-col">Overall Service Quality</td>
+              <td><input type="radio" value="none" name="Service" /></td>
+              <td><input type="radio" value="none" name="Service" /></td>
+              <td><input type="radio" value="none" name="Service" /></td>
+              <td><input type="radio" value="none" name="Service" /></td>
+            </tr>
+            <tr>
+              <td class="first-col">Speed of Service</td>
+              <td><input type="radio" value="none" name="Speed" /></td>
+              <td><input type="radio" value="none" name="Speed" /></td>
+              <td><input type="radio" value="none" name="Speed" /></td>
+              <td><input type="radio" value="none" name="Speed" /></td>
+            </tr>
+            <tr>
+              <td class="first-col">Price</td>
+              <td><input type="radio" value="none" name="Price" /></td>
+              <td><input type="radio" value="none" name="Price" /></td>
+              <td><input type="radio" value="none" name="Price" /></td>
+              <td><input type="radio" value="none" name="Price" /></td>
+            </tr>
+            <tr>
+              <td class="first-col">Overall Experience</td>
+              <td><input type="radio" value="none" name="Experience" /></td>
+              <td><input type="radio" value="none" name="Experience" /></td>
+              <td><input type="radio" value="none" name="Experience" /></td>
+              <td><input type="radio" value="none" name="Experience" /></td>
+            </tr>
+          </table>
+          <h4>Any comments, questions or suggestions?</h4>
+          <textarea rows="5"></textarea>
+          <div class="btn-block">
+            <button type="submit" href="/">Send Review</button>
+          </div>
+        </form>
+    </div>
+    <div class="footer">
+         <p> &copy; 2021 Band Name</p>
+    </div>
+
+
+</body>
+</html>
